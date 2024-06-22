@@ -42,12 +42,21 @@ button:hover {
   background-color: #0056b3;
 }
 
+/* ... (style lainnya) ... */
+
 .result {
   margin-top: 20px;
 }
 
-.result p {
+.result p { /* Style untuk semua paragraf di dalam .result */
   margin: 10px 0;
+}
+
+#resultText { /* Style khusus untuk #resultText */
+  font-family: 'Courier New', monospace; 
+  font-weight: bold;
+  font-size: 1.2em;  
+  color: #ff0000;   
 }
 
 .button-container {
