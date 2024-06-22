@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: url('foto/image.jpg') no-repeat center center fixed;
+    background: url('foto/image.jpeg') no-repeat center center fixed;
     background-size: cover;
 }
 
