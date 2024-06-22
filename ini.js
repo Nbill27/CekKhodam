@@ -1,26 +1,26 @@
+const khodams = [
+    "Air Cucian Beras", "Api neraka", "Ampas kopling", "Batu Karang", "Cahaya Bulan", 
+    "Daun Rimbun", "mimi peri", "Kembang Pasir", "Hujan Deras", "Kera Sakti", 
+    "Pak Vincent", "Tanah Kubur", "Sepeda Ontel", "Titid Terbang", "Layangan Putus", 
+    "Baju Robek", "Buaya Putih", "Kuntilanak Merah", "Pocong gila", "Tuyul Emas"
+];
+
 function checkKhodam() {
-    var name = document.getElementById('nameInput').value;
-    var resultText = document.getElementById('resultText');
-    var retryButton = document.getElementById('retryButton');
-
-    var khodams = [
-        "Air Cucian Beras", "Api Menyala", "Kuda Nil", "Batu Karang", "Cahaya Bulan",
-        "Daun Rimbun", "Rante supra", "Gurun Pasir", "Hujan Deras", "",
-        "Sungai Mengalir", "Tanah Subur", "Sepeda Ontel", "Sapu Terbang", "Layangan Putus",
-        "Baju Robek", "Buaya Putih", "Kuntilanak Merah", "Pocong Bambu", "Tuyul Emas"
-    ];
-
-    if (name) {
-        var randomKhodam = khodams[Math.floor(Math.random() * khodams.length)];
-        resultText.innerHTML = `Khodam yang ada di dalam diri <b>${name}</b>: <br><span style="font-size: 24px;">${randomKhodam}</span><br>Jangan lupa share ke yang lain agar mereka tahu sosok asli yang ada di dalam diri kamu`;
-        retryButton.style.display = 'inline-block';
-    } else {
-        resultText.innerHTML = 'Mohon masukkan nama kamu.';
+    const nameInput = document.getElementById('nameInput').value;
+    if (nameInput.trim() === "") {
+        alert("Tulis nama kamu di sini!");
+        return;
     }
+    const randomIndex = Math.floor(Math.random() * khodams.length);
+    const khodam = khodams[randomIndex];
+    document.getElementById('resultText').innerText = `Khodam yang ada di dalam diri kamu: ${khodam}`;
+    document.getElementById('shareText').style.display = 'block';
+    document.getElementById('retryButton').style.display = 'block';
 }
 
 function retry() {
     document.getElementById('nameInput').value = '';
-    document.getElementById('resultText').innerHTML = '';
+    document.getElementById('resultText').innerText = '';
+    document.getElementById('shareText').style.display = 'none';
     document.getElementById('retryButton').style.display = 'none';
 }
