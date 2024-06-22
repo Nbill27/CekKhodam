@@ -6,29 +6,32 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: url('foto/image.jpeg') no-repeat center center fixed;
+    background: url('https://example.com/background-image.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    color: #fff;
 }
 
-input[type="text"] {
-    width: 80%;
+h1 {
+    margin: 0;
+}
+
+input {
     padding: 10px;
-    margin: 10px 0;
-    border: none;
+    margin-top: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    margin-top: 10px;
+    background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
@@ -36,20 +39,28 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
 }
 
 .result {
     margin-top: 20px;
 }
 
+.result p {
+    margin: 10px 0;
+}
+
 footer {
     margin-top: 20px;
     text-align: center;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+    color: #777;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
