@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="robots" content="noindex">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cek Khodam Online</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cek Khodam Online</title>
+  <meta name="description" content="Cek khodam yang ada di dalam diri kamu dengan permainan seru ini! (Hanya untuk hiburan)">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Cek Khodam</h1>
-        <p>Cek khodam yang ada di dalam diri kamu</p>
-        <input type="text" id="nameInput" placeholder="Tulis nama kamu di sini">
-        <button onclick="checkKhodam()">CHECK</button>
-        <p>Permainan ini semata hanya untuk candaan jadi jangan di seriusin, seperti dia yang ga serius sama kamu HAHHAA</p>
-        <div id="result" class="result">
-            <p id="resultText"></p>
-            <p id="shareText" style="display: none;">Jangan lupa share ke yang lain agar mereka tahu sosok asli yang ada di dalam diri kamu</p>
-            <button id="retryButton" onclick="retry()" style="display: none;">Ulangi</button>
-            <div class="button-container" style="dislay: none;"> 
-                <p>Permainan ini semata hanya untuk candaan jadi jangan di seriusin, seperti dia yang ga serius sama kamu HAHHAA</p>
-            <button id="retryButton" onclick="retry()" style="display: none;">Ulangi</button>
-        </div>
+  <div class="container">
+    <h1>Cek Khodam</h1>
+    <h2>Cari Tahu Sosok Khodam di Dalam Dirimu</h2>
+    <p>Masukkan namamu di bawah ini dan temukan khodam yang mungkin menyertaimu.</p>
+    <input type="text" id="nameInput" placeholder="Tulis nama kamu di sini">
+    <button onclick="checkKhodam()">CHECK</button>
+    <div id="result" class="result">
+      <p id="resultText"></p>
+      <p id="shareText" style="display: none;">Bagikan hasilnya kepada teman-temanmu!</p>
+      <button id="retryButton" onclick="retry()" style="display: none;">Ulangi</button>
     </div>
-      </div>   
-    <footer>
-     <p>Developed  <a href="https://www.instagram.com/nnbiiill?igsh=Y3Q4MmxpNHNkY2l4">Muhammad Nabil</a></p>
-         <p>Beri Dukungan  <a href="https://trakteer.id/elbill/tip?open=true">trakteer</a></p>
-    </footer>
-    <script src="ini.js"></script>
+    <p>Ingat, ini hanya permainan untuk hiburan semata. Jangan dianggap serius ya!</p> 
+  </div>
+
+  <footer>
+    <p>Developed by <a href="https://www.instagram.com/nnbiiill?igsh=Y3Q4MmxpNHNkY2l4">Muhammad Nabil</a></p>
+    <p>Beri Dukungan <a href="https://trakteer.id/elbill/tip?open=true">trakteer</a></p>
+  </footer>
+
+  <script src="ini.js"></script>
 </body>
 </html>
-
