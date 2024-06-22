@@ -79,7 +79,8 @@ button:hover {
 footer {
   margin-top: 20px;
   text-align: center;
-  color: #777;
+  color: #000000;
+  font-family:Lucida Console;
 }
 
 footer a {
